@@ -1,8 +1,8 @@
-
+/* Body styling */
 body {
    background-color: #DAF2FF;
 }
-
+/* H1 Styling*/
 h1
 {color: rgb(10, 77, 153);
         font-family: "Roboto", sans-serif;
@@ -10,7 +10,7 @@ h1
         font-style: normal;
         align-content: center;
       }
-      
+/* IMG Styling */
 img {
     max-width: 350px;
     align-items: center;
