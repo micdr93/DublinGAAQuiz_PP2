@@ -1,4 +1,4 @@
-//Adding quiz QWuestions here
+//Adding quiz Questions here
 
 let quizQuestions = [
    { 
