@@ -17,7 +17,8 @@ let quizQuestions = [
         answers: ["Bernard Brogan", "Kevin McManaman", "Stephen Cluxton", "Alan Brogan"],
         correctAnswer: "Stephen Cluxton"
     },
-    {question: "How many Senior All-Ireland Football titles have Dublin won in total?",
+    {   
+        question: "How many Senior All-Ireland Football titles have Dublin won in total?",
         answers: ["Twenty-seven", "Thirty-one", "Twenty-nine", "Thirty-three"],
         correctAnswer: "Thirty-one"
     },
@@ -25,6 +26,11 @@ let quizQuestions = [
         question: "How many players on the Senior football panel play for their local club Raheny?",
         answers: ["Two", "Four", "Three", "Five"],
         correctAnswer: "Three"
+    },
+    {   
+        question: "How many All-Ireland Football titles did Diarmuid Connolly win?",
+        answers: ["Three", "One", "Four", "Two"],
+        correctAnswer: "Two"
     },
 ];
 
