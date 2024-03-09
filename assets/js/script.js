@@ -21,5 +21,10 @@ let quizQuestions = [
         answers: ["Twenty-seven", "Thirty-one", "Twenty-nine", "Thirty-three"],
         correctAnswer: "Thirty-one"
     },
+    {
+        question: "How many players on the Senior football panel play for their local club Raheny?",
+        answers: ["Two", "Four", "Three", "Five"],
+        correctAnswer: "Three"
+    },
 ];
 
