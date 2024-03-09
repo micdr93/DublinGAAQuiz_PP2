@@ -4,8 +4,12 @@ answers: ["Jim Gavin", "Paul Caffrey", "Dessie Farrel", "Pat Gilroy"],
 correctAnswer: "Dessie Farrel"
 },
    { question: "How many Allstar Awards does Brian Fenton have?",
-        answers: ["7", "5", "4", "6"],
-        correctAnswer: "6"
+        answers: ["Seven", "Five", "Four", "Six"],
+        correctAnswer: "Six"
+    },
+    {question: "Who scored the winning point in the All-Ireland Final versus Kerry?",
+        answers: ["Bernard Brogan", "Kevin McManaman", "Stephen Cluxton", "Alan Brogan"],
+        correctAnswer: "Stephen Cluxton"
     },
 ];
 
