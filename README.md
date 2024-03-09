@@ -8,7 +8,7 @@
 
 
 ## Goals:
-
+The aim of this quiz is to test the knowledge of Dublin GAA fans.
 
 ## Wireframes:
 
