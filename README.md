@@ -21,15 +21,18 @@ The aim of this quiz is to test the knowledge of Dublin GAA fans.
 
 - HTML
   -No errors were returned when passing through the official [W3C validator]
+  https://validator.w3.org/nu/?doc=https%3A%2F%2Fmicdr93.github.io%2FDublinGAAQuiz_PP2%2F
 
 
 - CSS 
-  -No errors were returned when passing through the official [W3C validator] 
+  -No errors were returned when passing through the official [W3C validator]
+  http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fmicdr93.github.io%2FDublinGAAQuiz_PP2%2F&usermedium=all&vextwarning=&warning=1
 
 ### Unfixed Bugs
 
 
 ### Lighthouse Testing 
+(https://github.com/micdr93/DublinGAAQuiz_PP2/blob/main/assets/readme-images/Lighthouse.png)
 
 
 
