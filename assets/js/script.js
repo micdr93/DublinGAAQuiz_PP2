@@ -42,4 +42,11 @@ let scores =[];
 
 function startQuiz () {
     userName = document.getElementById(username).value.trim();
+    if (userName.length === 0) {
+        alert("Enter your name to start the quiz");
+        return;
+    }
+    document.getElementById("startScreen");
+    document.getElementById("quizContainer");
+    displayQuestion();
 }
