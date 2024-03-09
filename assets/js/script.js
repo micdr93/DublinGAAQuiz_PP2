@@ -93,7 +93,7 @@ function showResults() {
 // Adding updateScoreboard function here:
 function updateScoreboard() {
     const scoreEntriesDiv = document.getElementById("scoreEntries");
-    scoreEntriesDiv.innerHTML = "";
+    scoreEntriesDiv = "";
     scores.forEach(score => {
         const div = document.createElement("div");
         div.textContent = score;
