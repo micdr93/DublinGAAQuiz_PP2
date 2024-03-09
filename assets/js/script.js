@@ -33,54 +33,44 @@ let quizQuestions = [
         correctAnswer: "Two"
     },
 ];
+
 let currentQuestionIndex = 0;
 let quizScore = 0;
-let userName ='';
-let scores =[];
+let userName = '';
+const scores = [];
 
-// Adding functions here
-
-function startQuiz () {
-    userName = document.getElementById(username).value.trim();
+function startQuiz() {
+    userName = document.getElementById("username").value.trim();
     if (userName.length === 0) {
-        alert("Enter your name to start the quiz");
+        alert("Please enter your name to start the quiz.");
         return;
     }
-    document.getElementById("startScreen");
-    document.getElementById("quizContainer");
+    document.getElementById("startScreen").style.display = "none";
+    document.getElementById("quizContainer").style.display = "block";
     displayQuestion();
 }
-// Adding question functions here
 
-let currentQuestion = quizQuestions[currentQuestionIndex];
-document.getElementById("question").textContent = currentQuestion.question;
-let answersList = document.getElementById("answers");
-answersList = "";
-currentQuestion.answers.forEach(answer =>{
-let li = document.createElement("li");
-let button = document.createElement("button");
-button.textContent = answer;
-button.onclick = function() { selectAnswer(answer);};
-li.appendChild(button);
-answersList.appendChild(li);
-
-document.getElementById("submitBtn");
-
+function displayQuestion() {
+    const currentQuestion = quizQuestions[currentQuestionIndex];
+    document.getElementById("question").textContent = currentQuestion.question;
+    const answersList = document.getElementById("answers");
+    answersList.innerHTML = "";
+    currentQuestion.answers.forEach(answer => {
+        const li = document.createElement("li");
+        const button = document.createElement("button");
+        button.textContent = answer;
+        button.onclick = function() { selectAnswer(answer); };
+        li.appendChild(button);
+        answersList.appendChild(li);
+    });
+    document.getElementById("submitBtn").style.display = "block";
 }
-)
-
-//Adding answer selection function here
 
 function selectAnswer(selectedAnswer) {
-    if (selectedAnswer === quizQuestions[currentQuestionIndex].correctAnswer) 
-    {
+    if (selectedAnswer === quizQuestions[currentQuestionIndex].correctAnswer) {
         quizScore++;
     }
-
-
 }
-
-// Adding answer submission function here
 
 function submitAnswer() {
     currentQuestionIndex++;
@@ -91,25 +81,21 @@ function submitAnswer() {
     }
 }
 
-// Adding result fucntion here
-
-function showResults () {
-    document.getElementById("quizContainer");
-    document.getElementById("score");
-    document.getElementById("score").textContent = '${userName}, your score is: ${quizScore}/${quizQuestions.length}`';
-    let scoreEntry = '${userName}: ${quizScore}/${quizQuestions.length}';
+function showResults() {
+    document.getElementById("quizContainer").style.display = "none";
+    document.getElementById("score").style.display = "block";
+    document.getElementById("score").textContent = `Hello ${userName}, your score is: ${quizScore}/${quizQuestions.length}`;
+    const scoreEntry = `${userName}: ${quizScore}/${quizQuestions.length}`;
     scores.push(scoreEntry);
     updateScoreboard();
-
 }
 
-// Adding scoreboard function
-
 function updateScoreboard() {
- let scoreEntriesDiv = "";
- scores.forEach(score => {
-    let div = document.createElement("div");
-    div.textContent = score;
-    scoreEntriesDiv.appendChild(div);
-}); 
- }
+    const scoreEntriesDiv = document.getElementById("scoreEntries");
+    scoreEntriesDiv.innerHTML = "";
+    scores.forEach(score => {
+        const div = document.createElement("div");
+        div.textContent = score;
+        scoreEntriesDiv.appendChild(div);
+    });
+}
