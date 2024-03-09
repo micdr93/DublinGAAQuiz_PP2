@@ -4,34 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <title> Dublin GAA Quiz</title>
-  <header>
-      <div class="navdiv"></div>
-      <div id="logo-container">
-      <img src="assets/images/dublin_gaa_quiz_logo.svg" alt="Logo">
-    </div>
-  </header>
     <title>Dublin GAA Quiz</title>
 </head>
 <body>
+    <header>
+        <div class="navdiv"></div>
+        <div id="logo-container">
+            <img src="assets/images/dublin_gaa_quiz_logo.svg" alt="Logo">
+        </div>
+    </header>
+
     <h1>Are you a True Blue?</h1>
+
     <div id="startScreen">
-    <label for="username">Enter your Name:</label>
-    <input type="text" id="username">
-    <button onclick="startQuiz()">Lets Go!</button>
-  </div>
+        <label for="username">Enter your Name:</label>
+        <input type="text" id="username">
+        <button onclick="startQuiz()">Let's Go!</button>
+    </div>
 
-  <div id="quizContainer">
-  <p id="question"></p>
-  <ul id="answers">
-  </ul>
-  </div>
-  <p id="score" style="display: none;"></p>
-  <div id="scoreboard">
+    <div id="quizContainer">
+        <p id="question"></p>
+        <ul id="answers"></ul>
+    </div>
 
-  <div id="scoreEntries"></div>
-  </div>
-   <script src="assets/js/script.js"></script>
+    <p id="score" style="display: none;"></p>
+
+    <div id="scoreboard">
+        <div id="scoreEntries"></div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
