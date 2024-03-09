@@ -1,3 +1,17 @@
+document.addEventListener("DOMContentLoaded", function() {
+    let buttons = document.getElementsByTagName("button");
+
+    for (let button of buttons) {
+        button.addEventListener("click", function() {
+            if (this.getAttribute("data-type") === "submit") {
+                alert("You clicked Submit!");
+            } else {
+                let gameType = this.getAttribute("data-type");
+                alert(`You clicked ${gameType}`);
+            }
+        });
+    }
+});
 //Adding quiz Questions here
 
 let quizQuestions = [
@@ -101,5 +115,4 @@ function updateScoreboard() {
         const div = document.createElement("div");
         div.textContent = score;
         scoreEntriesDiv.appendChild(div);
-    });
-}
+    });}
