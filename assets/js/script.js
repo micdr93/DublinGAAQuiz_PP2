@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //Adding quiz Questions here
 
-let quizQuestions = [
+var quizQuestions = [
    { 
     question: "Who is the current Dublin Senior Football manager?",
     answers: ["Jim Gavin", "Paul Caffrey", "Dessie Farrell", "Pat Gilroy"],
