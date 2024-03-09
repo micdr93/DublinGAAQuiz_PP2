@@ -3,7 +3,7 @@ let quizQuestions = [
 answers: ["Jim Gavin", "Paul Caffrey", "Dessie Farrel", "Pat Gilroy"],
 correctAnswer: "Dessie Farrel"
 },
-   { question: "How man Allstar Awards does Brian Fenton have?",
+   { question: "How many Allstar Awards does Brian Fenton have?",
         answers: ["7", "5", "4", "6"],
         correctAnswer: "6"
     },
