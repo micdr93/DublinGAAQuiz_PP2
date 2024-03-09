@@ -13,7 +13,7 @@ let quizQuestions = [
     },
 
     {   
-        question: "Who scored the winning point in the All-Ireland Final versus Kerry?",
+        question: "Who scored the winning point in the All-Ireland Final versus Kerry in 2011?",
         answers: ["Bernard Brogan", "Kevin McManaman", "Stephen Cluxton", "Alan Brogan"],
         correctAnswer: "Stephen Cluxton"
     },
@@ -61,7 +61,6 @@ function displayQuestion() {
         const li = document.createElement("li");
         const button = document.createElement("button");
         button.textContent = answer;
-    
         button.addEventListener("click", function() { selectAnswer(answer); });
         li.appendChild(button);
         answersList.appendChild(li);
@@ -89,7 +88,7 @@ function submitAnswer() {
 function showResults() {
     document.getElementById("quizContainer").style.display = "none";
     document.getElementById("score").style.display = "block";
-    document.getElementById("score").textContent = `Hello ${userName}, your score is: ${quizScore}/${quizQuestions.length}`;
+    document.getElementById("score").textContent = ` ${userName}, your score is: ${quizScore}/${quizQuestions.length}`;
     const scoreEntry = `${userName}: ${quizScore}/${quizQuestions.length}`;
     scores.push(scoreEntry);
     updateScoreboard();
