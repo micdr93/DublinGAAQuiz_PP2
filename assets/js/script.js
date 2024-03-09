@@ -56,12 +56,13 @@ function displayQuestion() {
     const currentQuestion = quizQuestions[currentQuestionIndex];
     document.getElementById("question").textContent = currentQuestion.question;
     const answersList = document.getElementById("answers");
-    answersList = "";
+    
     currentQuestion.answers.forEach(answer => {
         const li = document.createElement("li");
         const button = document.createElement("button");
         button.textContent = answer;
-        button.onclick = function() { selectAnswer(answer); };
+    
+        button.addEventListener("click", function() { selectAnswer(answer); });
         li.appendChild(button);
         answersList.appendChild(li);
     });
@@ -70,7 +71,9 @@ function displayQuestion() {
 //Adding Select Answer function
 function selectAnswer(selectedAnswer) {
     if (selectedAnswer === quizQuestions[currentQuestionIndex].correctAnswer) {
+        console.log("Correct!");
         quizScore++;
+        
     }
 }
 //Adding submitAnswer function
