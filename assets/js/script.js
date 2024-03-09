@@ -33,4 +33,10 @@ let quizQuestions = [
         correctAnswer: "Two"
     },
 ];
+let currentQuestionIndex = 0;
+let quizScore = 0;
+let userName ='';
+let scores =[];
+
+// Adding functions here
 
