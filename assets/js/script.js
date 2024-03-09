@@ -39,6 +39,8 @@ let quizScore = 0;
 let userName = '';
 const scores = [];
 
+//Adding startQuiz function
+
 function startQuiz() {
     userName = document.getElementById("username").value.trim();
     if (userName.length === 0) {
@@ -49,12 +51,12 @@ function startQuiz() {
     document.getElementById("quizContainer").style.display = "block";
     displayQuestion();
 }
-
+//Adding displayQuestion function here
 function displayQuestion() {
     const currentQuestion = quizQuestions[currentQuestionIndex];
     document.getElementById("question").textContent = currentQuestion.question;
     const answersList = document.getElementById("answers");
-    answersList.innerHTML = "";
+    answersList = "";
     currentQuestion.answers.forEach(answer => {
         const li = document.createElement("li");
         const button = document.createElement("button");
@@ -65,22 +67,21 @@ function displayQuestion() {
     });
     document.getElementById("submitBtn").style.display = "block";
 }
-
+//Adding Select Answer function
 function selectAnswer(selectedAnswer) {
     if (selectedAnswer === quizQuestions[currentQuestionIndex].correctAnswer) {
         quizScore++;
     }
 }
-
+//Adding submitAnswer function
 function submitAnswer() {
     currentQuestionIndex++;
     if (currentQuestionIndex < quizQuestions.length) {
         displayQuestion();
     } else {
         showResults();
-    }
-}
-
+    }}
+// Adding showResults function
 function showResults() {
     document.getElementById("quizContainer").style.display = "none";
     document.getElementById("score").style.display = "block";
@@ -89,7 +90,7 @@ function showResults() {
     scores.push(scoreEntry);
     updateScoreboard();
 }
-
+// Adding updateScoreboard function here:
 function updateScoreboard() {
     const scoreEntriesDiv = document.getElementById("scoreEntries");
     scoreEntriesDiv.innerHTML = "";
