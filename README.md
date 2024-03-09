@@ -1,7 +1,7 @@
 # Dublin GAA Quiz
 
 ## Features: 
-
+This site features a Username input field, a 'Lets Go! button, followed by a Dublin GAA knowledge focused Quiz, with a highscore feature at the end.
 
 
 ### Existing Features
@@ -11,7 +11,9 @@
 The aim of this quiz is to test the knowledge of Dublin GAA fans.
 
 ## Wireframes:
-
+![Smartphone](https://github.com/micdr93/DublinGAAQuiz_PP2/blob/main/assets/readme-images/Wireframe1.png)
+![Smartphone](https://github.com/micdr93/DublinGAAQuiz_PP2/blob/main/assets/readme-images/Wireframe2.png)
+![Smartphone](https://github.com/micdr93/DublinGAAQuiz_PP2/blob/main/assets/readme-images/Wireframe3.png)
 
 ## Testing 
 
@@ -26,9 +28,10 @@ The aim of this quiz is to test the knowledge of Dublin GAA fans.
 
 ### Unfixed Bugs
 
-I haven't learned Javascript yet so I sufficed with a thank-you page on the form submission, and also the performance on the featured artists page scores low. 
 
 ### Lighthouse Testing 
+
+
 
 # Deployment
 
@@ -63,9 +66,11 @@ I haven't learned Javascript yet so I sufficed with a thank-you page on the form
  4. From the source drop down list under the heading Build and deployment, select main.
  5. The page will then provide the link to the website.
 
- The live link can be found here -
+ The live link can be found here - https://micdr93.github.io/DublinGAAQuiz_PP2/
 
 ### Media
+
+
 
 
 
