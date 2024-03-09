@@ -1,10 +1,3 @@
-document.addEventListener("DOMContentLoaded", function(){
-    const loadedScores=JSON.parse(localStorage.getItem("quizScores"))
-    if (loadedScores!==null);
-    {scores=loadedScores;
-    updateScoreboard();
-}});
-
 //Adding quiz Questions here
 
 const quizQuestions = [
@@ -100,18 +93,22 @@ function showResults() {
     document.getElementById("quizContainer").style.display = "none";
     document.getElementById("score").style.display = "block";
     document.getElementById("score").textContent = ` ${userName}, your score is: ${quizScore}/${quizQuestions.length}`;
-    const scoreEntry = {name:userName,score:quizScore};
-    scores.push(scoreEntry);
+    const scoreEntry = { name: userName, score: quizScore };
+    let savedScores = JSON.parse(localStorage.getItem("quizScores") || "[]");
+    savedScores.push(scoreEntry);
+    localStorage.setItem("quizScores", JSON.stringify(savedScores));
     updateScoreboard();
 }
 // Adding updateScoreboard function here:
 function updateScoreboard() {
+    let scores = JSON.parse(localStorage.getItem("quizScores") || "[]");
     scores.sort((a, b) => b.score - a.score);
-    localStorage.setItem('quizScores', JSON.stringify(scores));
-    let scoreEntriesDiv = document.getElementById("scoreEntries");
-    scoreEntriesDiv.innerHTML = "";
+
+    const scoreEntriesDiv = document.getElementById("scoreEntries");
+    scoreEntriesDiv.innerHTML = ""; 
     scores.forEach((scoreEntry, index) => {
         const div = document.createElement("div");
         div.textContent = `${index + 1}. ${scoreEntry.name}: ${scoreEntry.score}/${quizQuestions.length}`;
         scoreEntriesDiv.appendChild(div);
-    });}
+    });
+}
