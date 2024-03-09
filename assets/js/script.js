@@ -68,3 +68,15 @@ document.getElementById("submitBtn");
 
 }
 )
+
+//Adding answer selection function here
+
+function selectAnswer(selectedAnswer) {
+    if (selectedAnswer === quizQuestions[currentQuestionIndex].correctAnswer) 
+    {
+        quizScore++;
+    }
+
+
+}
+
