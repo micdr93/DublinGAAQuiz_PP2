@@ -71,7 +71,13 @@ The aim of this quiz is to test the knowledge of Dublin GAA fans.
 
  The live link can be found here - https://micdr93.github.io/DublinGAAQuiz_PP2/
 
-### Media
+### Sources of content:
+https://en.wikipedia.org/wiki/Dublin_county_football_team
+https://www.dublingaa.ie/
+https://en.wikipedia.org/wiki/Stephen_Cluxton
+https://en.wikipedia.org/wiki/Brian_Fenton
+https://en.wikipedia.org/wiki/List_of_Dublin_inter-county_footballers
+https://assets.dublingaa.ie/assets/images/design/logo-20140709-1.png (I used this png and edited it in Illustrator to create a custom SVG)
 
 
 
