@@ -32,7 +32,7 @@ The aim of this quiz is to test the knowledge of Dublin GAA fans.
 
 
 ### Lighthouse Testing 
-(https://github.com/micdr93/DublinGAAQuiz_PP2/blob/main/assets/readme-images/Lighthouse.png)
+![Lighthouse](https://github.com/micdr93/DublinGAAQuiz_PP2/blob/main/assets/readme-images/Lighthouse.png)
 
 
 
