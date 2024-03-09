@@ -16,6 +16,8 @@ img {
     align-items: center;
 }
 
+
+/* quizContainer Styling */
 #quizContainer {
   display: none;
   font-family: "Roboto", sans-serif;

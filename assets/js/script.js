@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
 //Adding quiz Questions here
 
 let quizQuestions = [
