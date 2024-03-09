@@ -4,9 +4,6 @@
 This site features a Username input field, a 'Lets Go! button, followed by a Dublin GAA knowledge focused Quiz, with a highscore feature at the end.
 
 
-### Existing Features
-
-
 ## Goals:
 The aim of this quiz is to test the knowledge of Dublin GAA fans.
 
