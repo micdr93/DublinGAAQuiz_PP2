@@ -102,3 +102,14 @@ function showResults () {
     updateScoreboard();
 
 }
+
+// Adding scoreboard function
+
+function updateScoreboard() {
+ let scoreEntriesDiv = "";
+ scores.forEach(score => {
+    let div = document.createElement("div");
+    div.textContent = score;
+    scoreEntriesDiv.appendChild(div);
+}); 
+ }
