@@ -66,14 +66,15 @@ function displayQuestion() {
         li.appendChild(button);
         answersList.appendChild(li);
     });
-    document.getElementById("submitBtn").style.display = "block";
+ 
 }
 //Adding Select Answer function
 function selectAnswer(selectedAnswer) {
     if (selectedAnswer === quizQuestions[currentQuestionIndex].correctAnswer) {
         console.log("Correct!");
         quizScore++;
-        
+    } else {
+        console.log("Incorrect!");
     }
 }
 //Adding submitAnswer function
@@ -95,7 +96,7 @@ function showResults() {
 }
 // Adding updateScoreboard function here:
 function updateScoreboard() {
-    const scoreEntriesDiv = document.getElementById("scoreEntries");
+    let scoreEntriesDiv = document.getElementById("scoreEntries");
     scoreEntriesDiv = "";
     scores.forEach(score => {
         const div = document.createElement("div");
