@@ -80,3 +80,25 @@ function selectAnswer(selectedAnswer) {
 
 }
 
+// Adding answer submission function here
+
+function submitAnswer() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < quizQuestions.length) {
+        displayQuestion();
+    } else {
+        showResults();
+    }
+}
+
+// Adding result fucntion here
+
+function showResults () {
+    document.getElementById("quizContainer");
+    document.getElementById("score");
+    document.getElementById("score").textContent = '${userName}, your score is: ${quizScore}/${quizQuestions.length}`';
+    let scoreEntry = '${userName}: ${quizScore}/${quizQuestions.length}';
+    scores.push(scoreEntry);
+    updateScoreboard();
+
+}
