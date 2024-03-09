@@ -2,7 +2,7 @@
 
 let quizQuestions = [
    { 
-    question: "Whos is the current Dublin Senior Fotball manager?",
+    question: "Whos is the current Dublin Senior Football manager?",
     answers: ["Jim Gavin", "Paul Caffrey", "Dessie Farrel", "Pat Gilroy"],
     correctAnswer: "Dessie Farrel"
 },
@@ -50,3 +50,21 @@ function startQuiz () {
     document.getElementById("quizContainer");
     displayQuestion();
 }
+// Adding question functions here
+
+let currentQuestion = quizQuestions[currentQuestionIndex];
+document.getElementById("question").textContent = currentQuestion.question;
+let answersList = document.getElementById("answers");
+answersList = "";
+currentQuestion.answers.forEach(answer =>{
+let li = document.createElement("li");
+let button = document.createElement("button");
+button.textContent = answer;
+button.onclick = function() { selectAnswer(answer);};
+li.appendChild(button);
+answersList.appendChild(li);
+
+document.getElementById("submitBtn");
+
+}
+)
