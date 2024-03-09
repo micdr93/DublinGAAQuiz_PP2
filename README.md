@@ -70,14 +70,20 @@ The aim of this quiz is to test the knowledge of Dublin GAA fans.
  5. The page will then provide the link to the website.
 
  The live link can be found here - https://micdr93.github.io/DublinGAAQuiz_PP2/
+ ## Credits 
+
+- I utilised hhttps://www.w3schools.com/, https://developer.mozilla.org/en-US/docs/Web/Events, https://simplestepscode.com/javascript-quiz-tutorial/ and content I have learned via Code Intitute.
+- I had the benefit of working closely with my mentor Dan Hamilton on this website, who was a tremendous help.
+- I have used the Cloning and Forking section of the README from https://github.com/dlhamilton/Bomb-Catcher/blob/main/README.md?plain=1#Cloning-&-Forking
+
 
 ### Sources of content:
-https://en.wikipedia.org/wiki/Dublin_county_football_team
-https://www.dublingaa.ie/
-https://en.wikipedia.org/wiki/Stephen_Cluxton
-https://en.wikipedia.org/wiki/Brian_Fenton
-https://en.wikipedia.org/wiki/List_of_Dublin_inter-county_footballers
-https://assets.dublingaa.ie/assets/images/design/logo-20140709-1.png (I used this png and edited it in Illustrator to create a custom SVG)
+- https://en.wikipedia.org/wiki/Dublin_county_football_team
+- https://www.dublingaa.ie/
+- https://en.wikipedia.org/wiki/Stephen_Cluxton
+- https://en.wikipedia.org/wiki/Brian_Fenton
+- https://en.wikipedia.org/wiki/List_of_Dublin_inter-county_footballers
+- https://assets.dublingaa.ie/assets/images/design/logo-20140709-1.png (I used this png and edited it in Illustrator to create a custom SVG)
 
 
 
