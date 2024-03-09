@@ -40,3 +40,6 @@ let scores =[];
 
 // Adding functions here
 
+function startQuiz () {
+    userName = document.getElementById(username).value.trim();
+}
