@@ -1,26 +1,18 @@
-document.addEventListener("DOMContentLoaded", function() {
-    let buttons = document.getElementsByTagName("button");
-
-    for (let button of buttons) {
-        button.addEventListener("click", function() {
-            if (this.getAttribute("data-type") === "submit") {
-                alert("You clicked Submit!");
-            } else {
-                let gameType = this.getAttribute("data-type");
-                alert(`You clicked ${gameType}`);
-            }
-        });
-    }
-});
+document.addEventListener("DOMContentLoaded", function(){
+    const loadedScores=JSON.parse(localStorage.getItem("quizScores"))
+    if (loadedScores!==null);
+    {scores=loadedScores;
+    updateScoreboard();
+}});
 
 //Adding quiz Questions here
 
-var quizQuestions = [
+const quizQuestions = [
    { 
     question: "Who is the current Dublin Senior Football manager?",
     answers: ["Jim Gavin", "Paul Caffrey", "Dessie Farrell", "Pat Gilroy"],
     correctAnswer: "Dessie Farrell"
-},
+    },
    { 
     question: "How many Allstar Awards does Brian Fenton have?",
     answers: ["Seven", "Five", "Four", "Six"],
@@ -55,7 +47,6 @@ let userName = '';
 const scores = [];
 
 //Adding startQuiz function
-
 function startQuiz() {
     userName = document.getElementById("username").value.trim();
     if (userName.length === 0) {
@@ -71,7 +62,11 @@ function displayQuestion() {
     const currentQuestion = quizQuestions[currentQuestionIndex];
     document.getElementById("question").textContent = currentQuestion.question;
     const answersList = document.getElementById("answers");
+   //Clears all list itemes before showing the next one
+    while (answersList.firstChild) {
     
+        answersList.removeChild(answersList.firstChild)
+    }
     currentQuestion.answers.forEach(answer => {
         const li = document.createElement("li");
         const button = document.createElement("button");
@@ -90,6 +85,7 @@ function selectAnswer(selectedAnswer) {
     } else {
         console.log("Incorrect!");
     }
+    submitAnswer();
 }
 //Adding submitAnswer function
 function submitAnswer() {
@@ -104,16 +100,18 @@ function showResults() {
     document.getElementById("quizContainer").style.display = "none";
     document.getElementById("score").style.display = "block";
     document.getElementById("score").textContent = ` ${userName}, your score is: ${quizScore}/${quizQuestions.length}`;
-    const scoreEntry = `${userName}: ${quizScore}/${quizQuestions.length}`;
+    const scoreEntry = {name:userName,score:quizScore};
     scores.push(scoreEntry);
     updateScoreboard();
 }
 // Adding updateScoreboard function here:
 function updateScoreboard() {
+    scores.sort((a, b) => b.score - a.score);
+    localStorage.setItem('quizScores', JSON.stringify(scores));
     let scoreEntriesDiv = document.getElementById("scoreEntries");
-    scoreEntriesDiv = "";
-    scores.forEach(score => {
+    scoreEntriesDiv.innerHTML = "";
+    scores.forEach((scoreEntry, index) => {
         const div = document.createElement("div");
-        div.textContent = score;
+        div.textContent = `${index + 1}. ${scoreEntry.name}: ${scoreEntry.score}/${quizQuestions.length}`;
         scoreEntriesDiv.appendChild(div);
     });}
