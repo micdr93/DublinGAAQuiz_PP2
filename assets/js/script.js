@@ -106,7 +106,6 @@ function showResults() {
 function updateScoreboard() {
     let scores = JSON.parse(localStorage.getItem("quizScores") || "[]");
     scores.sort((a, b) => b.score - a.score);
-
     const scoreEntriesDiv = document.getElementById("scoreEntries");
     scoreEntriesDiv.innerHTML = ""; 
     const heading = document.createElement('h3');
@@ -115,6 +114,7 @@ function updateScoreboard() {
     scoreEntriesDiv.appendChild(heading);
     scores.forEach((scoreEntry, index) => {
         const div = document.createElement("div");
+        div.classList.add("username");
         div.textContent = `${index + 1}. ${scoreEntry.name}: ${scoreEntry.score}/${quizQuestions.length}`;
         scoreEntriesDiv.appendChild(div);
     });
