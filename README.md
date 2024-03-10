@@ -1,6 +1,6 @@
 # Dublin GAA Quiz
 
-# Welcome to the Dublin GAA Quiz, the ultimate test of your knowledge about Dublin's Gaelic Athletic Association (GAA) history, achievements, and trivia. Perfect for fans and enthusiasts looking to challenge themselves or others!
+## Welcome to the Dublin GAA Quiz, the ultimate test of your knowledge about Dublin's Gaelic Athletic Association (GAA) history, achievements, and trivia. Perfect for fans and enthusiasts looking to challenge themselves or others!
 
 ![Responsive Mocukp](https://github.com/micdr93/DublinGAAQuiz_PP2/blob/main/assets/readme-images/responsive_mockup.png)
 
