@@ -68,7 +68,13 @@ img {
     border-color : #004080;
     }
 
-
+.heading {
+  color: rgb(10, 77, 153);
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-style: normal;
+text-align: left;
+}
 
 
 @media (max-width: 414px) {
