@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 //Adding quiz Questions here
 
 const quizQuestions = [
@@ -97,7 +99,8 @@ function showResults() {
     let savedScores = JSON.parse(localStorage.getItem("quizScores") || "[]");
     savedScores.push(scoreEntry);
     localStorage.setItem("quizScores", JSON.stringify(savedScores));
-    updateScoreboard();
+    updateScoreboard();https://pythontutor.com/visualize.html#mode=display
+    addRestartButton();
 }
 // Adding updateScoreboard function here:
 function updateScoreboard() {
@@ -106,9 +109,24 @@ function updateScoreboard() {
 
     const scoreEntriesDiv = document.getElementById("scoreEntries");
     scoreEntriesDiv.innerHTML = ""; 
+    const heading = document.createElement('h3');
+    heading.classList.add("heading"); 
+    heading.textContent = 'High Scores';
+    scoreEntriesDiv.appendChild(heading);
     scores.forEach((scoreEntry, index) => {
         const div = document.createElement("div");
         div.textContent = `${index + 1}. ${scoreEntry.name}: ${scoreEntry.score}/${quizQuestions.length}`;
         scoreEntriesDiv.appendChild(div);
     });
+}
+
+function addRestartButton() {
+const scoreEntriesDiv = document.getElementById("scoreEntries");
+const restartButton = document.createElement('button');
+restartButton.classList.add("restart-button"); 
+restartButton.textContent = 'Restart';
+restartButton.onclick = function (){
+    window.location.reload();
+}
+scoreEntriesDiv.appendChild(restartButton);
 }
