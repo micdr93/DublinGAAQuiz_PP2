@@ -1,7 +1,16 @@
 # Dublin GAA Quiz
 
 ## Features: 
+
 This site features a Username input field, a 'Lets Go! button, followed by a Dublin GAA knowledge focused Quiz, with a highscore feature and restart button at the end.
+
+![Question1](https://github.com/micdr93/DublinGAAQuiz_PP2/blob/main/assets/readme-images/question1.png)
+![Question2](https://github.com/micdr93/DublinGAAQuiz_PP2/blob/main/assets/readme-images/question2.png)
+![Question1](https://github.com/micdr93/DublinGAAQuiz_PP2/blob/main/assets/readme-images/question3.png)
+![Question1](https://github.com/micdr93/DublinGAAQuiz_PP2/blob/main/assets/readme-images/question4.png)
+![Question1](https://github.com/micdr93/DublinGAAQuiz_PP2/blob/main/assets/readme-images/question5.png)
+![Question1](https://github.com/micdr93/DublinGAAQuiz_PP2/blob/main/assets/readme-images/question6.png)
+![Highscores](https://github.com/micdr93/DublinGAAQuiz_PP2/blob/main/assets/readme-images/highscores.png))
 
 
 
@@ -37,7 +46,7 @@ The most complex function has a cyclomatic complexity value of 2 while the media
 
 ### Unfixed Bugs
 
-The reset button seemed to be causing a bug initially.
+The restart button seemed to be causing a bug initially, which was eventually fixed.
 
 
 ### Lighthouse Testing 
