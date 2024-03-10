@@ -122,7 +122,7 @@ The Lighthouse report indicates excellent performance, accessibility, best pract
 
 ### Content & Media
 - The quiz questions and content were inspired by information from Wikipedia, the official Dublin GAA website, and other listed sources.
-- The Dublin GAA logo was recreated and customized by me, based on an original design found here.
+- The Dublin GAA logo was recreated and customized by me, based on an original design found here: (https://www.dublingaa.ie/)
 
 ### Sources of content:
 - https://en.wikipedia.org/wiki/Dublin_county_football_team
