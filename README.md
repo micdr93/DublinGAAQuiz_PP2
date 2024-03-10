@@ -12,13 +12,13 @@ This site features a Username input field, a 'Lets Go! button, followed by a Dub
 ![Question1](https://github.com/micdr93/DublinGAAQuiz_PP2/blob/main/assets/readme-images/question4.png)
 ![Question1](https://github.com/micdr93/DublinGAAQuiz_PP2/blob/main/assets/readme-images/question5.png)
 ![Question1](https://github.com/micdr93/DublinGAAQuiz_PP2/blob/main/assets/readme-images/question6.png)
-![Highscores](https://github.com/micdr93/DublinGAAQuiz_PP2/blob/main/assets/readme-images/highscores.png))
+![Highscores](https://github.com/micdr93/DublinGAAQuiz_PP2/blob/main/assets/readme-images/highscores.png)
 
 
 
 
 ## Goals:
-The aim of this quiz is to test the knowledge of Dublin GAA fans.
+The aim of this quiz is to test the knowledge of Dublin GAA fans. I want this site to be a fun and straight-forward for users.
 
 ## Wireframes:
 ![Smartphone](https://github.com/micdr93/DublinGAAQuiz_PP2/blob/main/assets/readme-images/Wireframe1.png)
