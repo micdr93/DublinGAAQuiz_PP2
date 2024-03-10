@@ -60,7 +60,7 @@ function displayQuestion() {
    //Clears all list itemes before showing the next one
     while (answersList.firstChild) {
     
-        answersList.removeChild(answersList.firstChild)
+        answersList.removeChild(answersList.firstChild);
     }
     currentQuestion.answers.forEach(answer => {
         const li = document.createElement("li");
@@ -127,6 +127,6 @@ restartButton.classList.add("restart-button");
 restartButton.textContent = 'Restart';
 restartButton.onclick = function (){
     window.location.reload();
-}
+};
 scoreEntriesDiv.appendChild(restartButton);
 }
