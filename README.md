@@ -1,5 +1,7 @@
 # Dublin GAA Quiz
 
+![Responsive Mocukp](https://github.com/micdr93/DublinGAAQuiz_PP2/blob/main/assets/readme-images/responsive_mockup.png)
+
 ## Features: 
 
 This site features a Username input field, a 'Lets Go! button, followed by a Dublin GAA knowledge focused Quiz, with a highscore feature and restart button at the end.
