@@ -124,7 +124,13 @@ The Lighthouse report indicates excellent performance, accessibility, best pract
 - The quiz questions and content were inspired by information from Wikipedia, the official Dublin GAA website, and other listed sources.
 - The Dublin GAA logo was recreated and customized by me, based on an original design found here.
 
-
+### Sources of content:
+- https://en.wikipedia.org/wiki/Dublin_county_football_team
+- https://www.dublingaa.ie/
+- https://en.wikipedia.org/wiki/Stephen_Cluxton
+- https://en.wikipedia.org/wiki/Brian_Fenton
+- https://en.wikipedia.org/wiki/List_of_Dublin_inter-county_footballers
+- https://assets.dublingaa.ie/assets/images/design/logo-20140709-1.png (I used this png and edited it in Illustrator to create a custom SVG)
 
 
 
