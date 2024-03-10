@@ -99,7 +99,7 @@ function showResults() {
     let savedScores = JSON.parse(localStorage.getItem("quizScores") || "[]");
     savedScores.push(scoreEntry);
     localStorage.setItem("quizScores", JSON.stringify(savedScores));
-    updateScoreboard();https://pythontutor.com/visualize.html#mode=display
+    updateScoreboard();
     addRestartButton();
 }
 // Adding updateScoreboard function here:
