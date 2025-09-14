@@ -5,8 +5,8 @@
 const quizQuestions = [
    { 
     question: "Who is the current Dublin Senior Football manager?",
-    answers: ["Jim Gavin", "Paul Caffrey", "Dessie Farrell", "Pat Gilroy"],
-    correctAnswer: "Dessie Farrell"
+    answers: ["Jim Gavin", "Paul Caffrey", "Dessie Farrell", "Ger Brennan"],
+    correctAnswer: "Ger Brennan"
     },
    { 
     question: "How many Allstar Awards does Brian Fenton have?",
