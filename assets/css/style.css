@@ -14,7 +14,7 @@ body {
 }
 
 /* =========================
-   Header & Logo¸
+   Header & Logo
 ========================= */
 header {
   width: 100%;
@@ -127,16 +127,6 @@ button:focus,
   height: auto;
 }
 
-.wave-container svg path {
-  animation: waveMove 6s ease-in-out infinite alternate;
-}
-
-@keyframes waveMove {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-20px); }
-}
-
-
 /* =========================
    Fix for Answer List Bullets
 ========================= */
@@ -150,4 +140,3 @@ button:focus,
   list-style-type: none !important;
   margin: 10px 0;
   padding: 0;
-}
